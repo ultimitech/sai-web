@@ -138,7 +138,7 @@
     <script>
         async function fetchData() {
             try {
-                const response = await fetch('http://192.168.78.85:8000/defaultuserinput');
+                const response = await fetch('http://ubs1.servepics.com:8000/defaultuserinput');
                 const responseData = await response.json();
                 console.log(responseData);
 
@@ -180,7 +180,7 @@
             formData.forEach((value, key) => { data[key] = value });
             
             try {
-                const response = await fetch('http://192.168.78.85:8000/schedule', {
+                const response = await fetch('http://ubs1.servepics.com:8000/schedule', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
